@@ -1,0 +1,289 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+body{font-family: 'Poppins', sans-serif; line-height: 1.3;font-size: 15px;cursor:default;}
+
+.container{max-width: 1100px; margin: 0 auto; width:100%; margin-top: 30px;}
+
+input, textarea, select{font-family: 'Poppins', sans-serif; line-height: 1.3;font-size: 15px;}
+
+img{max-width: 100%; display: block;}
+
+li{list-style-type: none;}
+
+a{ text-decoration: none;}
+
+/* ************* Navbar ************ */
+.navbar {background-color: #333;position: fixed;top: 0;width: 100%;background-color: rgba(63, 63, 63, 0.79);box-shadow: 10px 3px 27px 5px rgba(0, 0, 0, 0.37);z-index: 50;display: flex;}
+.navbar .navbar_logo{flex: 1;  padding-left: 60px; padding-top: 15px; padding-bottom: 15px;}
+.navbar .navbar_logo > img{ max-width: 65px;}
+.navbar .navbar_links > ul{text-align: right; margin-right: 20px;}
+.navbar .navbar_links > ul > li{display: inline-block;}
+.navbar .navbar_links > ul > li > a {margin-top: 12px;color: #f2f2f2;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 17px;display: inline-block;font-family: 'Poppins' sans-serif;position: relative;}  
+.navbar .navbar_links > ul > li > a::after{position: absolute;content: '';left: 0;width: 0;bottom: 0;height: 2px;background-color: red;transition: .2s;}
+.navbar .navbar_links >ul>li>a:hover::after{width: 100%;}
+.navbar .navbar_links ul > li .contact:hover{color: #FFFFFF;background-color: red;} 
+.navbar .navbar_links ul > li .contact{ border: 1px solid #FFFFFF;padding: 5px 20px 5px 20px;border-radius: 2px;margin-left: 4px;margin-top: 0;margin-right: 20px;/* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); */}   
+.navbar .navbar_links > ul > li > a:hover {color: #212121;}
+
+/* ***************** Main Heading Section *************** */
+.main{position: relative;}
+.main > img {width: 100%;}
+.main .main_heading{text-align: center;position: absolute;left: 75px;top: 200px;}
+.main .main_heading > h3{font-family: 'Poppins' sans-serif;font-style: normal;font-size: 35px;color: rgba(63, 63, 63, 0.9);}
+.main .main_heading > p{font-family: 'Poppins', sans-serif;font-size: 20px;font-weight: 440;color: #6D6D6D;margin-top: 10PX;}
+/* ************** Navbar Bottom  *********** */
+.navbar_bottom{position: absolute;bottom: -55px;left: 15%;width: 70%;background-color: rgba(90, 93, 96, 0.77);border-radius: 8px;padding-bottom: 2px;}
+.navbar_bottom form > ul {padding: 10px;display: flex;}
+.navbar_bottom form > ul > li{margin-top: 15px;margin-bottom: 20px;} 
+.navbar_bottom form > ul > li > label{text-align: left;color: #FFFFFF;font-family: 'Poppins', sans-serif;font-weight: 700;font-size: 16px;line-height: 30px;margin-left: 10px;}
+.navbar_bottom input[type=text],.navbar_bottom select{border: none;width: 100%;color: #E9E9E9;background: none;padding: 8px;}
+.navbar_bottom .options {max-width: 78%;}
+.navbar_bottom select > option{background-color: #333;color: #FFFFFF;    }
+.navbar_bottom ul > li.search{border: 2px solid #FFFFFF;border-radius: 4px;margin: 30px 0;padding: 10px;}
+.navbar_bottom form > ul > li> a{font-family: 'Poppins', sans-serif;color: #FFFFFF;font-style: normal;font-weight: 700;font-size: 15px;align-items: center;}
+.navbar_bottom form > ul > li> a::before{content: '\f002';font-family: 'fontAwesome';padding-right: 4px;}
+.navbar_bottom form > ul > li.search a:hover{color: #212121;}
+
+/* **************      Our Projects      ************ */
+.home h2{font-size: 25px;font-weight: 500;text-align: center;margin: 100px auto 0 auto;font-family: 'Poppins', sans-serif;color: #3F3F3F;border-bottom: 2px solid #7F7F7F;position: relative;max-width: 15%}
+.home > h2 > span{font-size: 40px;font-weight: 500;color: #3F3F3F;}
+.home h2 ::before{content: '';position: absolute;top: 50px;left: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home h2 ::after{content: '';position: absolute;top: 50px;right: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home p{font-size: 18px;text-align: center;font-weight: 200;color: #5E5E5E;margin-bottom: 40px;padding-top: 12px;font-family: 'Poppins', sans-serif; font-weight: 400;line-height: 1.4;}
+.home .home_section ul{display: flex;  gap: 25px; margin: 30px; }
+.home .home_section li{flex: 1;}
+.home .home_section h4{text-align: center;color: #3F3F3F;margin-top: 20px;font-family: 'Poppins', sans-serif;font-style: normal;font-size: 18px;font-weight: 500;}
+
+/* **************** Popular Properties Section ******************************/
+.home_properties h2{font-family: 'Poppins', sans-serif;font-weight: 500;font-size: 25px;text-align: center;margin: 50px auto 25px auto;color: #3F3F3F;border-bottom: 2px solid #7F7F7F;position: relative;max-width: 20%;}
+.home_properties h2 > span {font-size: 40px;font-weight: 500;color: #3F3F3F;}
+.home_properties h2::before{content: '';position: absolute;top: 50px;left: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_properties h2 ::after{content: '';position: absolute;top: 50px;right: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_properties p{font-family: 'Poppins', sans-serif;font-style: normal;font-size: 18px;font-weight: 400;line-height: 1.3;width: 100%;color: #5E5E5E;text-align: center;}
+.home_properties p + p{padding: 10px 0;}
+.home_properties .section{display: flex;margin: 30px 30px;}
+
+/********************  Our Township  *******************/
+.home_township h2{font-family: 'Poppins', sans-serif;font-weight: 500;font-size: 25px;text-align: center;margin: 50px auto 25px auto;color: #3F3F3F;border-bottom: 2px solid #7F7F7F;position: relative;max-width: 16%;}
+.home_township h2 > span {font-size: 40px;font-weight: 500;color: #3F3F3F;}
+.home_township h2::before{content: '';position: absolute;top: 50px;left: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_township h2 ::after{content: '';position: absolute;top: 50px;right: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_township p{width: 100%;color: #5E5E5E;font-family: 'Poppins', sans-serif;font-style: normal;font-weight: 400;font-size: 18px;line-height: 1.3;text-align: center;}
+.home_township .banner{margin: 40px 30px;position: relative;}
+.home_township .banner>span{position: absolute;color: #FFFFFF;}
+.home_township .banner>span.text_1{top: 20px;right: 150px;font-family: 'Rasa';font-style: normal;font-weight: 400;font-size: 59px;}
+.home_township .banner>span.text_2{top: 32px;right: 85px;font-family: 'Rasa';font-style: normal;font-weight: 500;font-size: 26px;}
+.home_township .banner>span.text_3{top: 52px;right: 59px;font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 400;font-size: 17px;}
+.home_township ul > li.pre::before{content: '\f053';font-family: 'fontAwesome'; position: absolute;top: 19%;left: 10px;color: #FFFFFF;font-size: 22px;z-index: 5;}
+.home_township ul > li.pre{content: '';position: absolute;left: 25px;top: 50%;background-color: #262626;border-radius: 50%;width: 40px;height: 40px;z-index: 4;}
+.home_township ul > li.next::before{content: '\f054';font-family: 'fontAwesome'; position: absolute;top: 19%;right: 10px;color: #FFFFFF;font-size: 22px;z-index: 5;}
+.home_township ul > li.next{position: absolute;right: 25px;top: 50%;background-color: #262626;border-radius: 50%;width: 40px; height: 40px;z-index: 4;}
+
+/********************  New Upcoming Projects  *******************/
+
+.home_projects h2{      font-family: 'Poppins', sans-serif;font-weight: 500;font-size: 25px;text-align: center;margin: 50px auto 25px auto;color: #3F3F3F;border-bottom: 2px solid #7F7F7F;position: relative;max-width: 25%;    }
+.home_projects h2 > span {font-size: 40px;font-weight: 500;color: #3F3F3F;}
+.home_projects h2::before{content: '';position: absolute;top: 50px;left: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_projects h2 ::after{content: '';position: absolute;top: 50px;right: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_projects p{color: #5E5E5E;font-family: 'Poppins', sans-serif;font-style: normal;font-weight: 400;font-size: 18px;text-align: center;line-height: 1.3; padding-bottom: 30px;width: 100%;}
+.home_projects ul{text-align: center;margin-top: 10px;display: flex;justify-content: center;}
+.home_projects .btn li a{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 400;font-size: 18px;line-height: 39px;padding: 4px 10px;margin: 15px;color: #3F3F3F;border: 1px solid #7E7E7E;border-radius: 3px;    }
+.home_projects .btn li a:hover{background: #1A2954;color: #FFFFFF;}
+.home_projects .btn .selected{background: #1A2954;color: #FFFFFF;}   
+.home_projects div.image{display: flex;  gap: 25px; margin: 30px; } 
+.home_projects .image p{padding-top: 10px;color: #1A2954;text-align: center;font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 500;font-size: 18px;line-height: 48px;}
+.home_projects .image  p::before{content: '\f041';font-family: 'fontAwesome'; color: #1A2954;font-size: 22px;}
+
+/****************** Home  Testimonial ****************/
+.home_testimonials>h2{text-align: center;font-family: 'Poppins', sans-serif;font-style: normal;font-weight: 500;font-size: 25px;margin: 20px auto 25px auto;color: #3F3F3F;border-bottom: 2px solid #7F7F7F;position: relative;max-width: 15%; }
+.home_testimonials>h2::before{content: '';position: absolute;top: 31px;left: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_testimonials>h2::after{content: '';position: absolute;top: 31px;right: -5px;background-color: #7F7F7F;border-radius: 50%;height: 6px;width: 6px;}
+.home_testimonials>p.about{font-family: 'Poppins', sans-serif;font-style: normal;font-weight: 500;font-size: 30px;line-height: 47px;color: #6F6F6F;padding-bottom: 15px;text-align: center;}
+.home_testimonials>img{align-items: center;width: 100px;height: 100px;display: flex;margin: 10px auto;}
+.home_testimonials>p.about_2{font-family: 'Poppins', sans-serif;font-style: normal;font-weight: 400;font-size: 18px;line-height: 25px;color: #747474;text-align: center;margin: 0 auto;width: 100%;max-width:30%;}
+.home_testimonials .name{font-family: 'Poppins', sans-serif;font-weight: 500;font-size: 25px;line-height: 47px;color: #6F6F6F;margin-top: 25px;text-align: center;}
+.home_testimonials>p:last-child{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 400;font-size: 18px;line-height: 47px;color: #6F6F6F;text-align: center;}
+
+/* ************* Home Footer ********* */
+.footer{background-color: #1F416F;display: flex;padding: 20px;margin-top: 50px;}
+.footer .subscribe{flex: 2;}
+.footer .subscribe p{color: #FFFFFF;font-family: 'Roboto', sans-serif;font-style: normal;font-weight: 200;font-size: 20px;line-height: 45px;padding-left: 30px;}
+.footer .btn{margin-top: 14px;}
+.footer .btn ul li a{flex: 1;color: #212121;text-decoration: none;background-color: #FFFFFF;border-radius: 4px;margin-right: 40px;padding: 5px 12px;font-family: 'Poppins', sans-serif;font-weight: 100;font-size: 15px;}
+.footer .btn ul li a:hover{background-color: #1A2954;color: #FFFFFF;}
+
+/**************** Footer Section ****************/
+.footer_section{background-color:  #707070;display: flex;padding: 30px 35px 10px 35px;justify-content: center;}
+.footer_section .section_left{padding: 15px;flex: 1;}
+.footer_section .section_left p{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 150;font-size: 14px;line-height: 30px;color: #FFFFFF;margin-right: 20px;}
+.footer_section .section_left ul{display: flex;    }
+.footer_section .section_left ul li i{padding: 10px;}
+
+/* ************ Contact Section ********* */
+.footer_section .section_contact{text-align: center;margin: 30px;flex: 1;}
+.footer_section .section_contact h3{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 200;font-size: 25px;color: #FFFFFF;padding-bottom: 30px;}
+.footer_section .section_contact ul{padding-left: 10px;}
+.footer_section .section_contact ul li{text-align: left;list-style:disc ;line-height: 30px;color: #FFFFFF;font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 100;font-size: 12px;}
+
+/***************** Quick Links Section ************ */
+.footer_section .section_link{flex: 1;text-align: center;margin: 30px;}
+.footer_section .section_link h3{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 200;font-size: 25px;color: #FFFFFF;padding-bottom: 30px;}
+.footer_section .section_link ul{padding-left: 40px;}
+.footer_section .section_link ul li{text-align: left;list-style:disc ;line-height: 30px;color: #FFFFFF;font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 100;font-size: 12px;}
+
+/* ********************* Appointment Section **************** */
+.footer_section .section_booking{flex: 1;text-align: center;margin: 30px;}
+.footer_section .section_booking h3{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 200;font-size: 25px;color: #FFFFFF;padding-bottom: 30px;text-align: left;}
+.footer_section .section_booking p{text-align: left;color: #FFFFFF;font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 150;font-size: 14px;line-height: 30px;}
+.footer_section .section_booking ul{padding-top: 20px;}
+.footer_section .section_booking ul li a{background-color: #1F416F;border-radius: 4px;padding: 10px 78px;text-decoration: none;color: #FFFFFF;text-align: center;font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 200;font-size: 16px;}
+.footer_section .section_booking ul li a:hover{color: #898989;    }
+
+/* ********************** ***************/
+.section_bottom{background-color:  #707070;display: flex;padding: 20px;margin-top: 1px;}
+.section_bottom .footer_left{flex: 1;}
+.section_bottom .footer_left p{color:  #E0E0E0;padding-left: 15px;font-family: 'Poppins' sans-serif;font-size: 13px;font-weight: 100;}
+.section_bottom .footer_right{flex: 1;text-align: right;}
+.section_bottom .footer_right p{color: #E0E0E0;padding-right: 30px;font-family: 'Poppins' sans-serif;font-size: 13px;font-weight: 100;}
+
+/**************** whatsapp ****************/
+.whatsapp{position: fixed;bottom: 0;left: 10px;    margin: 30px;background-color: green;border-radius: 50%;}
+.whatsapp a > i{padding: 12px 15px;color: #FFFFFF;}
+.whatsapp:hover{background-color: #013205;}
+
+/* ******************** Responsive laptop ******************* */
+@media(min-width:767px) and (max-width:1200px){
+    .main .main_heading{left: 50px; top: 140px;}
+    .main .main_heading > h3{font-size: 25px;}
+    .main .main_heading > p{font-size: 18px; font-weight: 600;}
+    .navbar_bottom form > ul{width: 100%;gap: 12px;}
+    .home h2>span{font-size: 28px;}
+    .home h2{font-size: 19px;}
+    .home h2 ::before{top:35px;}
+    .home h2 ::after{top: 35px;}
+
+    .home_properties h2>span{font-size: 21px;font-weight: 600;}
+    .home_properties h2{font-size: 18px;}
+    .home_properties h2::before{top: 25px;}
+    .home_properties h2 ::after{top: 25px;}
+
+    .home_township h2>span{font-size: 21px;font-weight: 600;}
+    .home_township h2{font-size: 19px;}
+    .home_township h2::before{top: 25px;}
+    .home_township h2 ::after{top: 25px;}
+
+    .home_projects h2>span{font-size: 19px; font-weight: 600;}
+    .home_projects h2{font-size: 17px;}
+    .home_projects h2::before{top: 23px;}
+    .home_projects h2 ::after{top: 23px;}
+
+    .home_testimonials > h2{max-width: 150px;}
+
+    .footer_section .section_booking ul li a{padding-left: 22px; padding-right: 22px;}
+    .footer_section .section_link ul li{line-height: 18px; margin: 0;}
+}
+
+/* ******************** Responsive Mobile ******************* */
+@media(max-width:767px){
+    .home .home_section ul{flex-direction: column;}
+    .home_properties .section{flex-direction: column;}
+    .home_projects ul{width: 100%;}
+}
+
+
+/* ********************* product Listing Page ******************** */
+.result>h3{margin-top: 110px;padding-left: 135px;font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 500;font-size: 30px;line-height: 65px;color: #5C5C5C;}
+
+/* ************** Project Section *********  */
+.product{margin-top: 35px;display: flex; background-color: #FFFFFF; width: 100%;margin: 0 auto;border-radius: 8px;box-shadow: 0 4px 51px 0 rgba(0,0,0,0.1);}
+.product .product_image{width: 30%;position: relative;}
+.product .product_image .image {opacity: 1;width: 100%;transition: .5s ease;backface-visibility: hidden;}
+.product .product_image .middle {transition: .5s ease;opacity: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;}
+.product .product_image:hover .image {opacity: 0.3;filter: brightness(0%);}
+.product .product_image:hover .middle {opacity: 1;}
+.product .product_image .middle .btn>a{background-color:#212121;color: white;font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 500;font-size: 16px;padding: 16px 28px;}
+.product .product_section{width: 70%;}
+.product .product_section .product_top{display: flex; padding-top: 6px;}
+.product .product_section .product_top .product_list{flex: 2;  }
+.product .product_section .product_top .product_list .list_1{display: flex; margin-top: 15px; padding-left: 25px;padding-bottom: 8px;}
+.product .product_section .product_top .product_list .list_1 > h3{padding-right: 39px;font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 500;font-size: 25px;line-height: 32px;color: #494949;}
+.checked{color: yellow;}
+.product .product_section .product_top .product_list .list_1 > span{padding: 2px 6px 0 0;}
+.product .product_section .product_top .product_list .list_2{display: flex;padding-bottom: 15px;}
+.product .product_section .product_top .product_list .list_2 > i{padding-top: 8px;padding-left: 25px;line-height: 20px;font-weight: 500;color: cadetblue;font-size: 24px;}
+.product .product_section .product_top .product_list .list_2 > h3{padding-left: 15px;padding-top: 8px;font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 500;font-size: 16px;line-height: 22px;color: #949292;}
+.product .product_section .product_top .product_price{justify-content:right;display: flex;  margin-top: 15px;padding-right: 45px;}
+.product .product_section .product_top .product_price > i{padding: 10px;border-radius: 50%;background-color:#E16756;color: #FFFFFF;font-size: 14px;text-align: center;max-width: 50px;max-height: 30px;margin-top: 2px;margin-right: 20px;  }
+.product .product_section .product_top .product_price > h3{font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 600;font-size: 25px;color: #E16756;}
+.product .product_section .product_bottom{margin-top: 1px;border-top: 1px solid #CECECE;padding-left: 25px;padding-top: 10px;}
+.product .product_section .product_bottom .product_info{display: flex;}
+.product .product_section .product_bottom .product_info > p{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 28px;  color: #7C7A7A;}
+.product .product_section .product_bottom .product_info>p>span>a{color: #5686E1;}
+.product .product_section .product_bottom .product_info>span>a{padding-left: 75px;font-size: 20px;color: cadetblue;}
+.product .product_section .product_bottom .product_icon{padding-top: 10px;padding-bottom: 20px;}
+.product .product_section .product_bottom .product_icon > span >i{padding-right: 22px;line-height: 39px;color: #7C7A7A;}
+.product .product_section .product_bottom .product_icon > span{margin-right: 130px;font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 500;font-size: 16px;line-height: 39px;color: #646464;}
+.product .product_section .product_bottom .product_btn > ul{display: flex;gap: 115px;margin-left: 50px;  }
+.product .product_section .product_bottom .product_btn > ul > li{padding: 10px 20px;background-color: #E16756;border-radius: 6px;}
+.product .product_section .product_bottom .product_btn > ul > li > a{color: #FFFFFF;}
+.product .product_section .product_bottom .product_btn > ul > li:nth-child(2){background-color: #4EA72F;}
+.product .product_section .product_bottom .product_btn > ul > li:nth-child(3){background-color: #5686E1;}
+.product .product_section .product_bottom .product_btn > ul > li:hover{background-color: #212121;color: #FFFFFF;}
+
+/* ******************* Details Page ******************* */
+.container .container_heading{display: flex;margin-top: 100px;}
+.container .container_heading .links_left{flex: 1;}
+.container .container_heading .links_left >ul{display: flex;}
+.container .container_heading .links_left>ul>li>a{font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color: #06A8F9;padding-right:10px;}
+.container .container_heading .links_left>ul>li>p{font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 24px;color:#6F6F6F;padding: 0 10px;}
+.container .container_heading .links_left>h3{font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 400;font-size: 26px;line-height: 54px;color: #1B1A1A;}
+.container .container_heading .links_left .details>ul{display: flex;}
+.container .container_heading .links_left .details>ul>li>i.bg_red{color: red; font-size: 8px; padding-right: 2px;padding-left: 0;padding-bottom: 2px;}
+.container .container_heading .links_left .details>ul>li{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 28px;color: #6F6F6F;}
+.container .container_heading .links_left .details>ul>li>i{padding: 0 8px;}
+.container .container_heading .links_right{display: flex;}
+.container .container_heading .links_right .share_link{flex: 2;}
+.container .container_heading .links_right .share_link>ul{display: flex; justify-content: end;}
+.container .container_heading .links_right .share_link>ul>li>a{text-align: center; padding: 2px 4px 0 4px; border: 1px solid #06A8F9; border-radius: 4px; color: #06A8F9}
+.container .container_heading .links_right .share_link>ul>li>a:hover{background-color: #06A8F9;color: #FFFFFF;border: none;}
+.container .container_heading .links_right .share_link>ul>li+li>a{text-align: center;padding: 2px 6px 0 5px; margin-left: 10px; border: 1px solid #06A8F9; border-radius: 4px; color: #06A8F9}
+.container .container_heading .share_link>h3{font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 400;font-size: 26px;line-height: 54px;color: #1B1A1A;}
+.container .container_heading .share_link .plot>ul{text-align: end; font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 28px;color: #6F6F6F;}
+.container .container_heading .share_link .plot>ul>li>i{padding-right: 2px;}
+
+/* ******************** Image******************************* */
+.container .banners {position: relative; margin-top: -21px;}
+.container .banners .facility{position: absolute; bottom:-10%;left: 15%;width: 70%;background: rgba(83, 106, 58, 0.45);box-shadow: -2px 4px 33px 2px rgba(0, 0, 0, 0.02);border-radius: 6px;}
+.container .banners .facility .facility_item{padding: 20px 30px 20px 30px; display: flex; text-align: center;justify-content: space-around;}
+.container .banners .facility .facility_item div>span>i{color: #FFFFFF; font-size: 32px;}
+.container .banners .facility .facility_item div>p{font-family: 'Poppins';font-style: normal;font-weight: 500;font-size: 17px;line-height: 30px;color: #FFFFFF;}
+
+/* ******************** form card ******************************* */
+.container form.card{width: 400px;padding: 25px;margin-top: 75px;margin-bottom: 100px;background-color: #FFFFFF;box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.06);border-radius: 6px;justify-content: end;}
+.container form.card .image{display: flex;}
+.container form.card .image .profile_name{padding-left: 25px;padding-top: 13px; text-align: center;}
+.container form.card .image .profile_name>ul>li>i{margin-right: 8px;font-size: 18px;}
+.container form.card .image .profile_name>ul>li>span{font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 400;font-size: 16px;line-height: 30px;color: #333333}
+.container form.card .image .profile_name>ul>li>a{font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 500;font-size: 14px;line-height: 24px;color: #06A8F9}
+.container form.card input[type=text],input[type=number],input[type=email]{width: 100%;line-height: 31px;margin-top: 20px;padding: 8px;border: 0.7px solid #8C8C8C;border-radius: 6px;}
+.container form.card input[type=text],input[type=number],input[type=email]{font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 500;font-size: 19px;color: #7F7F7F;}
+.container form.card textarea{width: 100%;line-height: 31px;margin-top: 20px;padding: 8px;border: 0.7px solid #8C8C8C;border-radius: 6px; font-family: 'Poppins' sans-serif;font-style: normal;font-weight: 500;font-size: 19px;color: #7F7F7F;}
+.container form.card select{width: 100%;line-height: 31px;margin-top: 20px;padding: 8px;border: 0.7px solid #8C8C8C;border-radius: 6px;}
+.container form.card .condition{margin-top: 20px;display: flex;}
+.container form.card .condition input[type=checkbox]{width: 26px;margin-bottom: 18px;}
+.container form.card .condition>p{font-family: 'Poppins' sans-serif;padding-left: 22px;font-style: normal;font-weight: 500;font-size: 18px;line-height: 25px;color: #8C8C8C;}
+.container form.card .condition>p>a{font-family: 'Poppins' sans-serif;padding-left: 20px;font-style: normal;font-weight: 500;font-size: 19px;line-height: 25px;color: #06A8F991;}
+.container form.card ul.contact_btn{display: flex;margin-top: 20px; justify-content: space-between;}
+.container form.card ul.contact_btn>li>a{padding: 10px 11px 10px 11px;background: #06A8F9;border: 0.7px solid #06A8F9;border-radius: 6px;font-family: 'Poppins';font-style: normal;font-weight: 500;font-size: 20px;line-height: 33px;color: #FFFFFF;}
+.container form.card ul.contact_btn>li>a:hover{background: #FFFFFF;color: #06A8F9;}
+.container form.card ul.contact_btn>li+li>a{padding: 10px 60px;background: #FFFFFF; border: 0.7px solid #06A8F9;border-radius: 6px;color: #06A8F9;font-family: 'Poppins';font-style: normal;font-weight: 500;font-size: 20px;line-height: 33px;}
+.container form.card ul.contact_btn>li+li>a:hover{background: #06A8F9;color: #FFFFFF;}
+.container form.card ul.whatsapp_btn>li{margin-top: 30px;width:100%;}
+.container form.card ul.whatsapp_btn>li>a{text-align: center; padding: 10px 125px 10px 125px;background: #FFFFFF;border: 0.7px solid #06A8F9;border-radius: 6px;font-family: 'Poppins'sans-serif;font-style: normal;font-weight: 500;font-size: 19px;line-height: 33px;color: #06A8F9;}
+.container form.card ul.whatsapp_btn>li>a:hover{background-color: #06A8F9; color: #FFFFFF;}
+
+/* *********** Get In Touch*********** */
+.flex{display: flex;}
+.imgs{padding: 75px 0; margin-bottom: 24px;}
+.imgs>img{border-radius: 6px 0 0 6px;}
+h1{text-align: center; color: #06A8F9;}
